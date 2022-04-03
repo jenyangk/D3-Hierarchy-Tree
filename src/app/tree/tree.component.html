@@ -1,0 +1,80 @@
+<div #container id="container">
+  <svg
+    #tree
+    [style.width]="this.dimensions.width"
+    [style.height]="this.dimensions.height"
+    id="tree"
+  >
+    <svg:g
+      [attr.transform]="
+        'translate(' +
+        this.dimensions.marginLeft +
+        ',' +
+        this.dimensions.marginTop +
+        ')'
+      "
+    >
+      <svg:text id="title" [attr.x]="this.dimensions.width / 2">
+        {{ this.title }}
+      </svg:text>
+      <svg:path
+        id="link"
+        *ngFor="let link of this.links"
+        [attr.d]="this.linkGenerator(link)"
+        [attr.stroke-width]="getLinkWeight(link.value)"
+        [attr.stroke]="getLinkColor(link.value)"
+        [matTooltip]="link.value + (link.value > 1 ? ' devices' : ' device')"
+        matTooltipClass="info-tooltip"
+      ></svg:path>
+      <svg:g
+        *ngFor="let node of this.nodes"
+        [attr.transform]="'translate(' + node.y + ',' + node.x + ')'"
+      >
+        <svg:text
+          id="node-text-bg"
+          [attr.dy]="'.35em'"
+          [attr.x]="node._children ? -20 : 20"
+          [style.text-anchor]="node._children ? 'end' : 'start'"
+        >
+          {{ this.getNodeLabel(node) }}
+        </svg:text>
+        <svg:circle
+          id="node-icon"
+          cx="0"
+          cy="0"
+          [attr.r]="getNodeWeight(node.value)"
+          (click)="this.toggleNode(node)"
+          [attr.fill]="getNodeColor(node.depth)"
+          [style.cursor]="node._children ? 'pointer' : 'default'"
+        ></svg:circle>
+        <svg:text
+          id="node-text"
+          [attr.dy]="'.35em'"
+          [attr.x]="node._children ? -20 : 20"
+          [style.text-anchor]="node._children ? 'end' : 'start'"
+        >
+          {{ this.getNodeLabel(node) }}
+        </svg:text>
+      </svg:g>
+    </svg:g>
+  </svg>
+  <div style="padding: 10px">
+    <div
+      cdkDropList
+      cdkDropListOrientation="horizontal"
+      (cdkDropListDropped)="drop($event)"
+      class="drop-list"
+    >
+      <div
+        class="list-button"
+        *ngFor="let key of this.keys; first as isFirst; last as isLast"
+        (click)="toggleKey(key)"
+        [ngClass]="key.disabled ? 'is-disabled' : ''"
+        cdkDragLockAxis="x"
+        cdkDrag
+      >
+        {{ key.value.toUpperCase() }}
+      </div>
+    </div>
+  </div>
+</div>
