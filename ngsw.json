@@ -1,0 +1,81 @@
+{
+  "configVersion": 1,
+  "timestamp": 1649055294598,
+  "index": "https://jenyangk.github.io/D3-Hierarchy-Tree/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://jenyangk.github.io/D3-Hierarchy-Tree/favicon.ico",
+        "https://jenyangk.github.io/D3-Hierarchy-Tree/index.html",
+        "https://jenyangk.github.io/D3-Hierarchy-Tree/main.2f2f621f1cf3817b.js",
+        "https://jenyangk.github.io/D3-Hierarchy-Tree/manifest.webmanifest",
+        "https://jenyangk.github.io/D3-Hierarchy-Tree/polyfills.586210fb8e31478c.js",
+        "https://jenyangk.github.io/D3-Hierarchy-Tree/runtime.b79eee91d90a2659.js",
+        "https://jenyangk.github.io/D3-Hierarchy-Tree/styles.20e46613ab64ae8b.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://jenyangk.github.io/D3-Hierarchy-Tree/assets/icons/icon-128x128.png",
+        "https://jenyangk.github.io/D3-Hierarchy-Tree/assets/icons/icon-144x144.png",
+        "https://jenyangk.github.io/D3-Hierarchy-Tree/assets/icons/icon-152x152.png",
+        "https://jenyangk.github.io/D3-Hierarchy-Tree/assets/icons/icon-192x192.png",
+        "https://jenyangk.github.io/D3-Hierarchy-Tree/assets/icons/icon-384x384.png",
+        "https://jenyangk.github.io/D3-Hierarchy-Tree/assets/icons/icon-512x512.png",
+        "https://jenyangk.github.io/D3-Hierarchy-Tree/assets/icons/icon-72x72.png",
+        "https://jenyangk.github.io/D3-Hierarchy-Tree/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://jenyangk.github.io/D3-Hierarchy-Tree/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "https://jenyangk.github.io/D3-Hierarchy-Tree/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "https://jenyangk.github.io/D3-Hierarchy-Tree/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "https://jenyangk.github.io/D3-Hierarchy-Tree/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "https://jenyangk.github.io/D3-Hierarchy-Tree/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "https://jenyangk.github.io/D3-Hierarchy-Tree/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "https://jenyangk.github.io/D3-Hierarchy-Tree/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "https://jenyangk.github.io/D3-Hierarchy-Tree/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "https://jenyangk.github.io/D3-Hierarchy-Tree/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "https://jenyangk.github.io/D3-Hierarchy-Tree/index.html": "7aa00348adad75015b88efd4c7d9d0dd0568305f",
+    "https://jenyangk.github.io/D3-Hierarchy-Tree/main.2f2f621f1cf3817b.js": "06bfde7e8dc20cf4fcdf81afdd34e47c6569485a",
+    "https://jenyangk.github.io/D3-Hierarchy-Tree/manifest.webmanifest": "e7b41893d772667681f9e7878a4c6aa94a7122db",
+    "https://jenyangk.github.io/D3-Hierarchy-Tree/polyfills.586210fb8e31478c.js": "0fee55c92ca0191fa89b1cbf03b3a32590724283",
+    "https://jenyangk.github.io/D3-Hierarchy-Tree/runtime.b79eee91d90a2659.js": "513cdc9d33098bdf1ab7e879396446e893dc73f1",
+    "https://jenyangk.github.io/D3-Hierarchy-Tree/styles.20e46613ab64ae8b.css": "2e44195f6062ab0f51c74a4f01d871dfe20f9bff"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
